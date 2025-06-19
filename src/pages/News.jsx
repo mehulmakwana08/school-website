@@ -515,8 +515,7 @@ This training will help our teachers deliver more effective and engaging lessons
         </div>
       )}
 
-      <style jsx>{`
-        .news-page {
+      <style>{`        .news-page {
           padding-top: 80px;
         }        /* Hero Section */
         .news-hero {

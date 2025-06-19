@@ -362,7 +362,7 @@ const Academics = () => {
         </div>
       </section>
 
-      <style jsx>{`        .academics-page {
+      <style>{`        .academics-page {
           padding-top: 80px;
         }
 

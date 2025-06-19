@@ -106,7 +106,7 @@ const Header = () => {
         </nav>
       </div>
 
-      <style jsx>{`        .header {
+      <style>{`        .header {
           position: fixed;
           top: 0;
           left: 0;

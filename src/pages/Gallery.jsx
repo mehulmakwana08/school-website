@@ -354,7 +354,7 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-      )}      <style jsx>{`
+      )}      <style>{`
         .gallery-page {
           padding-top: 80px;
         }

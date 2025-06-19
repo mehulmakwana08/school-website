@@ -502,7 +502,7 @@ const Admissions = () => {
         </div>
       </section>
 
-      <style jsx>{`
+      <style>{`
         .admissions-page {
           padding-top: 80px;
         }        /* Hero Section */

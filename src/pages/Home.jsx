@@ -332,7 +332,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>      <style jsx>{`
+      </section>      <style>{`
         .home-page {
           padding-top: 80px;
         }

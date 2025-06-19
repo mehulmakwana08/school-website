@@ -330,7 +330,7 @@ const About = () => {
         </div>
       </section>
 
-      <style jsx>{`
+      <style>{`
         .about-page {
           padding-top: 80px;
         }        /* Hero Section */

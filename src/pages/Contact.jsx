@@ -352,7 +352,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <style jsx>{`
+      <style>{`
         .contact-page {
           padding-top: 80px;
         }
