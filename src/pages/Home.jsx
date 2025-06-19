@@ -144,17 +144,7 @@ const Home = () => {
                 <Globe size={18} />
                 <span>Global Standards</span>
               </div>
-            </div>
-            <div className="hero-cta" data-aos="fade-up" data-aos-delay="600">
-              <Link to="/admissions" className="btn btn-primary">
-                <GraduationCap size={20} />
-                Admissions Open 2025-26
-                <ArrowRight size={20} />
-              </Link>
-              <Link to="/about" className="btn btn-glass">
-                <Play size={18} />
-                Watch School Tour
-              </Link>
+            </div>            <div className="hero-cta" data-aos="fade-up" data-aos-delay="600">
             </div>
           </div>
         </div>

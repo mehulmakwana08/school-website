@@ -46,8 +46,7 @@ const Header = () => {
               </div>
             </div>
             <div className="school-info">
-              <h1 className="school-name">V.D. Patel Shaikshanik Sankul</h1>
-              <p className="school-location">Mandavad</p>
+              <h1 className="school-name">V.D</h1>
             </div>
           </Link>
 
