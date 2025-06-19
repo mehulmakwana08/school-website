@@ -145,6 +145,7 @@ const Footer = () => {
           margin-top: auto;
           position: relative;
           overflow: hidden;
+          width: 100%;
         }
 
         .footer::before {
@@ -165,18 +166,32 @@ const Footer = () => {
           position: relative;
           z-index: 2;
         }
+
+        .container {
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: 0 var(--spacing-md);
         }
 
         .footer-content {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
           gap: var(--spacing-xl);
         }
 
         .footer-section {
+          flex: 1;
+          min-width: 250px;
+          max-width: 350px;
           display: flex;
           flex-direction: column;
           gap: var(--spacing-md);
+        }
+
+        .footer-section:first-child {
+          flex: 2;
+          max-width: 400px;
         }
 
         .footer-logo {
@@ -383,15 +398,44 @@ const Footer = () => {
           }
         }
 
-        /* Responsive Design */
-        @media (min-width: 768px) {
+        /* Responsive Design */        @media (max-width: 1200px) {
+          .footer-section {
+            min-width: 200px;
+          }
+        }
+
+        @media (max-width: 960px) {
           .footer-content {
-            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            justify-content: flex-start;
+          }
+          
+          .footer-section {
+            flex: 1 1 calc(50% - var(--spacing-xl));
+            max-width: none;
           }
 
-          .footer-bottom-content {
-            flex-direction: row;
-            justify-content: space-between;
+          .footer-section:first-child {
+            flex: 1 1 100%;
+            max-width: none;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .footer-section {
+            flex: 1 1 100%;
+          }
+
+          .footer-logo {
+            align-items: flex-start;
+          }
+
+          .school-info {
+            align-items: flex-start;
+          }
+
+          .footer-title::after {
+            left: 0;
+            transform: none;
           }
         }
 
@@ -401,13 +445,16 @@ const Footer = () => {
           }
 
           .footer-content {
-            grid-template-columns: 1fr;
             gap: var(--spacing-lg);
+          }
+
+          .footer-section {
+            text-align: center;
           }
 
           .footer-logo {
             flex-direction: column;
-            text-align: center;
+            align-items: center;
           }
 
           .school-info {
@@ -417,6 +464,10 @@ const Footer = () => {
           .footer-title::after {
             left: 50%;
             transform: translateX(-50%);
+          }
+
+          .contact-item {
+            justify-content: center;
           }
         }
       `}</style>
